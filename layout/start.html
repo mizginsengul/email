@@ -3,11 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
         header {
-            background-color: darkblue;
+            background-color:#7981129b;
             color: white;
             text-align: center;
+            padding: 1.5em 0;
 
         }
 
@@ -15,20 +24,87 @@
             color: darkgreen;
             text-align: center;
             font-size: 24px;
-            padding: 10px;
+            padding: 1em;
         }
 
         .first {
-            color: darkgreen;
+            color: white;
             text-align: center;
+            padding: 60px 20px;
+            width: 100%;
             background: url('1.jpeg') no-repeat center center/cover;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .kart1 {
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .kart1 img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .kart1 h4 {
+            color: indigo;
+            margin-top: 15px;
+        }
+
+        .kart1 p {
+            color: darkgray;
+
+        }
+
+        .email {
+            background-color: antiquewhite;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .email button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .enail input[type="email"] {
+            padding: 10px;
+            width: 70%;
+            margin-right: 10px;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>my web site</h1>
+        <h1>MY WEB SİTE</h1>
 
     </header>
     <nav>
@@ -36,12 +112,49 @@
         <a href="a">Hakkımda</a>
         <a href="b">İletişim</a>
     </nav>
-    <section class="first">
-        <h2> 1.bölüm</h2>
-        <p> s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-            type specimen book.</p>
-    </section>
+    <main>
+        <section class="first">
+            <h2> 1.bölüm</h2>
+            <p> s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+                a
+                type specimen book.</p>
+        </section>
+        <section class="cards">
+            <div class="kart1">
+                <img src="images.jpeg" alt="resim1">
+                <h4>KART 1 </h4>
+                <p>bu resim huzur verici bir resim</p>
+
+            </div>
+            <div class="kart1">
+                <img src="resim.jpeg" alt="resim1">
+                <h4>KART 2 </h4>
+                <p>bu resim huzur verici bir resim</p>
+
+            </div>
+            <div class="kart1">
+                <img src="s-0ce341a4a75d0853ec6c7783b4c1301638dd09b4.jpg.webp" alt="resim1">
+                <h4>KART 3 </h4>
+                <p>bu resim huzur verici bir resim</p>
+
+            </div>
+        </section>
+        <section class="email">
+
+            <h2>ABONE OLUN
+            </h2>
+            <P> MAİLİNİZE GİRİN</P>
+            <input type="mail" placeholder="Email adresinize girin">
+            <br>
+            <button>Abone Ol</button>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Tüm Hakları Saklıdır | Web Sitemiz</p>
+    </footer>
 </body>
 
 </html>
