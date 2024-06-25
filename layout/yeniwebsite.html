@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    header,
+    footer {
+        background-color: black;
+        color: aliceblue;
+        text-align: center;
+        padding: 1.5em 0;
+    }
+    nav{
+        background-color: bisque;
+        padding: 1em;
+        text-align: center;
+
+    }
+    nav a{
+        color: black;
+        font-weight: bold;
+
+
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    }
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+
+    }
+    .kart {
+        background-color: aliceblue;
+        width: 30%;
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+    .abone {
+        background-color: blanchedalmond;
+        padding: 20px;
+        text-align: center;
+
+    }
+    .abone imput[type="email"]{
+        padding: 10px;
+        width: 70%;
+        margin-right: 10px;
+
+    }
+    .abone button { 
+        padding: 10px 20px;
+        background-color: blueviolet;
+        color: aliceblue;
+        border: 1px solid;
+        cursor: pointer;
+        margin-top: 10px;
+    
+    }
+    .abone p {
+        margin-top: 0px;
+    }
+</style>
+
+<body>
+    <header>
+        HOŞ GELDİNİZ
+    </header>
+    <nav>
+        <a href="yeniwebsite.html">Anasayfa</a>
+        <a href="yeniwebsite.html">Hakkında</a>
+
+    </nav>
+    <main>
+        <section class="cards">
+            <div class="kart">
+                <img src="images.jpeg" alt="resim1">
+                <h3>resim 1</h3>
+                <p>asdfahsjdgjddhdh</p>
+            </div>
+
+            <div class="kart">
+                <img src="images.jpeg" alt="resim2">
+                <h3>resim 2</h3>
+                <p>asdfahsjdgjddhdh</p>
+            </div>
+        </section>
+        <section class="abone">
+            <h3>abone ol</h3>
+            <p> adsfgdhjf</p>
+            <input type="email" placeholder="emaile gir"></input>
+            <br>
+            <button>abone ol</button>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Tüm Hakları Saklıdır | Web Sitemiz</p>
+    </footer>
+</body>
+
+</html>
